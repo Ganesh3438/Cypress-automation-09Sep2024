@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://www.webdriveruniversity.com",
+    "firstName": "Ajay",
+    "lastName": "Kumar",
+    "email": "test@mailinator.com",
+    "comment": "Testing",
+    "welcomeMessage" : "Thank You for your Message!"
+}

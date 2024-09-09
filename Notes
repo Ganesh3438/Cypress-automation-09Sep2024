@@ -1,0 +1,33 @@
+npx cypress open
+CYPRESS_ENV=staging npx cypress open
+
+------------------------------------------------------------------------------------
+
+Step 1: Use a JSON File with Placeholders
+You can create a JSON file with placeholders for firstName, lastName, email, and comments under the fixtures directory.
+
+Example JSON File (cypress/fixtures/userData.json):
+
+{
+  "firstName": "{{randomFirstName}}",
+  "lastName": "{{randomLastName}}",
+  "email": "{{randomEmail}}",
+  "comments": "{{randomComments}}"
+}
+Step 2: Generate Random Data in Your Cypress Test
+In your test script, you can replace the placeholders with randomly generated values.
+
+You can use JavaScript's Math.random(), Date.now(), or libraries like faker.js to generate random data.
+
+Example Test File (cypress/e2e/test.cy.js):
+First, install faker.js for generating random data (optional, or you can use native JS functions).
+
+bash
+
+npm install faker --save-dev
+Then, in your test:
+
+javascript
+const faker = require('faker');  // Import faker for random data generation
+
+

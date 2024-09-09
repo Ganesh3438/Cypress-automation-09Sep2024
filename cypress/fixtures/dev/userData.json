@@ -1,0 +1,8 @@
+{
+    "firstName": "{{randomFirstName}}",
+    "lastName": "{{randomLastName}}",
+    "email": "{{randomEmail}}",
+    "comments": "{{randomComments}}",
+    "expectedMessage" : "Thank You for your Message!"
+  }
+  
